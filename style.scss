@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+$TheFont: 'Red Hat Text', sans-serif;
+
+$GrayishBlue: hsl(237, 18%, 59%);
+$SoftRed: hsl(345, 95%, 68%);
+$White: hsl(0, 0%, 100%);
+$DarkDesaturatedBlue: hsl(236, 21%, 26%);
+$VeryDarkBlue: hsl(235, 16%, 14%);
+$VeryDarkBlue: hsl(234, 17%, 12%);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $TheFont;
+    color: white;
+}
+
+.container {
+    overflow-x: hidden;
+    background-image: url(./images/pattern-hills.svg);
+    background-color: $VeryDarkBlue;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30PX;
+    text-transform: uppercase;
+    h1 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px;
+        letter-spacing: 7px;
+        font-size: 1.5rem;
+    }
+
+    .counter {
+        display: flex;
+        gap: 30px;
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+
+            span{
+                z-index: 2;
+                color: $SoftRed;
+                font-size: 40px;
+                position: absolute;
+
+            }
+            .bottom {
+                width: 80px;
+                height: 40px;
+                background-color: hsl(235, 20%, 38%);
+                z-index: 0;
+                position: absolute;
+                top: 40px;
+                left: 0;
+                border-radius: 5px;
+            }
+
+            
+            .top {
+                position: absolute;
+                background-color: $DarkDesaturatedBlue;
+                width: 80px;
+                top: 0;
+                left: 0;
+                z-index: 0;
+                height: 40px;
+                border-radius: 5px;
+            }
+            p{
+                margin-top: 150px;
+                color: $GrayishBlue;
+                font-size: .6rem;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    .socialIcons{
+        bottom: 5%;
+        position: absolute;
+        display: flex;
+        gap: 30px;
+        svg{
+            cursor: pointer;
+        }
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: .5rem;
+    text-align: center;
+    // left: 50%;
+    // transform: translate(-50%);
+
+    a {
+        color: gray;
+    }
+}

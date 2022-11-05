@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  color: white;
+}
+
+.container {
+  overflow-x: hidden;
+  background-image: url(./images/pattern-hills.svg);
+  background-color: hsl(234deg, 17%, 12%);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30PX;
+  text-transform: uppercase;
+}
+.container h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 7px;
+  font-size: 1.5rem;
+}
+.container .counter {
+  display: flex;
+  gap: 30px;
+}
+.container .counter .wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+}
+.container .counter .wrapper span {
+  z-index: 2;
+  color: hsl(345deg, 95%, 68%);
+  font-size: 40px;
+  position: absolute;
+}
+.container .counter .wrapper .bottom {
+  width: 80px;
+  height: 40px;
+  background-color: hsl(235deg, 20%, 38%);
+  z-index: 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  border-radius: 5px;
+}
+.container .counter .wrapper .top {
+  position: absolute;
+  background-color: hsl(236deg, 21%, 26%);
+  width: 80px;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 40px;
+  border-radius: 5px;
+}
+.container .counter .wrapper p {
+  margin-top: 150px;
+  color: hsl(237deg, 18%, 59%);
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+}
+.container .socialIcons {
+  bottom: 5%;
+  position: absolute;
+  display: flex;
+  gap: 30px;
+}
+.container .socialIcons svg {
+  cursor: pointer;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.5rem;
+  text-align: center;
+}
+.attribution a {
+  color: gray;
+}/*# sourceMappingURL=style.css.map */
